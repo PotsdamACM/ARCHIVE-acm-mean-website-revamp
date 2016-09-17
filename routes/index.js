@@ -19,5 +19,8 @@ router.get('/contact', function(req, res) {
   res.render('contact');
 });
 
+router.get('/focusgroups', function(req, res) {
+  res.render('focusgroups');
+})
 
 module.exports = router;

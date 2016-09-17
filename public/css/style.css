@@ -1,14 +1,28 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif; }
+
 a {
   color: #00B7FF; }
 
 header {
-  height: 50px;
+  height: 64px;
   display: flex;
   align-items: center;
-  line-height: 50px;
-  width: 100%; }
+  line-height: 64px;
+  width: 100%;
+  background-color: #B71C1C;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.52), 0 1px 2px rgba(0, 0, 0, 0.24); }
   header h1 {
-    margin: 0; }
+    margin: 0;
+    margin-left: 10px;
+    flex: 1; }
   header nav {
     float: right; }
 
@@ -17,8 +31,36 @@ header nav ul {
   margin: 0;
   list-style-type: none; }
   header nav ul li {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     float: left; }
+    header nav ul li:last-child {
+      margin-right: 20px; }
     header nav ul li a {
       color: inherit; }
+      header nav ul li a:hover {
+        color: inherit; }
+
+.container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 22px;
+  flex-grow: 2; }
+
+footer {
+  background-color: #B71C1C;
+  color: white;
+  padding: 50px 0;
+  width: 100%; }
+  footer section h5 {
+    font-size: 2.5rem; }
+  footer section a, footer section a:hover {
+    color: inherit; }
+  footer section ul {
+    list-style-type: none;
+    padding: 0; }
+  footer section[img] {
+    display: flex;
+    justify-content: center; }
+    footer section[img] img {
+      border-radius: 100%; }

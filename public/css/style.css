@@ -1,0 +1,24 @@
+a {
+  color: #00B7FF; }
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  line-height: 50px;
+  width: 100%; }
+  header h1 {
+    margin: 0; }
+  header nav {
+    float: right; }
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+  header nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left; }
+    header nav ul li a {
+      color: inherit; }

@@ -1,9 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
-html {
-  height: 100%; }
-
 body {
   display: flex;
+  height: 100%;
   flex-direction: column;
   font-family: 'Roboto', sans-serif; }
 
@@ -11,6 +9,7 @@ a {
   color: #00B7FF; }
 
 header {
+  z-index: 10;
   height: 64px;
   display: flex;
   align-items: center;
@@ -44,8 +43,10 @@ header nav ul {
 .container {
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: 22px;
-  flex-grow: 2; }
+  font-size: 22px; }
+
+.content {
+  flex: 1; }
 
 footer {
   background-color: #B71C1C;
@@ -54,7 +55,8 @@ footer {
   width: 100%; }
   footer section h5 {
     font-size: 2.5rem; }
-  footer section a, footer section a:hover {
+  footer section a,
+  footer section a:hover {
     color: inherit; }
   footer section ul {
     list-style-type: none;
@@ -64,3 +66,52 @@ footer {
     justify-content: center; }
     footer section[img] img {
       border-radius: 100%; }
+
+.hero {
+  /* Background pattern from subtlepatterns.com */
+  background-image: url("/img/carbon_fibre.png");
+  color: white;
+  height: 32em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .hero .hero-content {
+    font-size: 28px; }
+    .hero .hero-content h1 {
+      font-size: 2.5em; }
+
+.headliner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .headliner i {
+    font-size: 2.5em;
+    margin-bottom: 10px; }
+
+.card {
+  font-size: 80%;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16), 0 0px 6px rgba(0, 0, 0, 0.23);
+  height: 720px;
+  padding: 0;
+  width: 60%;
+  margin: 20px 0; }
+  .card div {
+    padding: 10px; }
+
+.card-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14); }
+  .card-image img {
+    object-fit: contain; }
+
+.card-action {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .card-action a {
+    flex: 1; }

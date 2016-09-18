@@ -4,7 +4,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
-var docserver = require('docserver');
 
 var routes = require('./routes/index');
 var talks = require('./routes/talks');
@@ -33,10 +32,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(cookieParser());
-app.use(docserver({
-    directory: __dirname + '/blogposts',
-    url: '/blog'
-}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
